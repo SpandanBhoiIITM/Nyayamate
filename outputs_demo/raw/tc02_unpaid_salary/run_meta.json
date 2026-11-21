@@ -1,0 +1,15 @@
+{
+  "test_id": "tc02_unpaid_salary",
+  "mode": "demo (rule-based, NOT AI)",
+  "run_started": "2026-11-20T20:34:13",
+  "run_finished": "2026-11-20T20:34:13",
+  "errors": [],
+  "models": {
+    "chat_reply": "offline-demo-engine (rule-based, not AI)",
+    "classify": "offline-demo-engine (rule-based, not AI)",
+    "extract_facts": "offline-demo-engine (rule-based, not AI)",
+    "guidance": "offline-demo-engine (rule-based, not AI)",
+    "document": "offline-demo-engine (rule-based, not AI)",
+    "checklist": "offline-demo-engine (rule-based, not AI)"
+  }
+}

@@ -1,0 +1,255 @@
+[
+  {
+    "test_id": "tc01_security_deposit",
+    "mode": "demo (rule-based, NOT AI)",
+    "checks": [
+      {
+        "check": "Issue area classified correctly",
+        "result": "PASS",
+        "detail": "got 'tenancy', expected 'tenancy'"
+      },
+      {
+        "check": "Amount extracted correctly",
+        "result": "PASS",
+        "detail": "got 25000, expected 25000"
+      },
+      {
+        "check": "Key facts present in summary",
+        "result": "PASS",
+        "detail": "all present"
+      },
+      {
+        "check": "No invented people/names",
+        "result": "PASS",
+        "detail": "none found"
+      },
+      {
+        "check": "No section numbers / case-law citations",
+        "result": "PASS",
+        "detail": "none detected"
+      },
+      {
+        "check": "Only verified-list laws named",
+        "result": "PASS",
+        "detail": "none flagged"
+      },
+      {
+        "check": "Next steps cover expected actions",
+        "result": "PASS",
+        "detail": "all themes present"
+      },
+      {
+        "check": "Lawyer / legal aid recommendation present",
+        "result": "PASS",
+        "detail": "3 item(s)"
+      },
+      {
+        "check": "Facts vs assumptions separated",
+        "result": "PASS",
+        "detail": "5 facts, 1 assumptions"
+      },
+      {
+        "check": "Document contains correct key facts",
+        "result": "PASS",
+        "detail": "all present"
+      },
+      {
+        "check": "Document has no amounts absent from input",
+        "result": "PASS",
+        "detail": "ok"
+      }
+    ],
+    "issues": []
+  },
+  {
+    "test_id": "tc02_unpaid_salary",
+    "mode": "demo (rule-based, NOT AI)",
+    "checks": [
+      {
+        "check": "Issue area classified correctly",
+        "result": "PASS",
+        "detail": "got 'employment', expected 'employment'"
+      },
+      {
+        "check": "Amount extracted correctly",
+        "result": "FAIL",
+        "detail": "got 32000, expected 64000"
+      },
+      {
+        "check": "Key facts present in summary",
+        "result": "PASS",
+        "detail": "all present"
+      },
+      {
+        "check": "No invented people/names",
+        "result": "PASS",
+        "detail": "none found"
+      },
+      {
+        "check": "No section numbers / case-law citations",
+        "result": "PASS",
+        "detail": "none detected"
+      },
+      {
+        "check": "Only verified-list laws named",
+        "result": "PASS",
+        "detail": "none flagged"
+      },
+      {
+        "check": "Next steps cover expected actions",
+        "result": "PASS",
+        "detail": "all themes present"
+      },
+      {
+        "check": "Lawyer / legal aid recommendation present",
+        "result": "PASS",
+        "detail": "3 item(s)"
+      },
+      {
+        "check": "Facts vs assumptions separated",
+        "result": "PASS",
+        "detail": "5 facts, 1 assumptions"
+      },
+      {
+        "check": "Document contains correct key facts",
+        "result": "FAIL",
+        "detail": "missing: 64,000|64000, August, September"
+      },
+      {
+        "check": "Document has no amounts absent from input",
+        "result": "PASS",
+        "detail": "ok"
+      }
+    ],
+    "issues": []
+  },
+  {
+    "test_id": "tc03_defective_product",
+    "mode": "demo (rule-based, NOT AI)",
+    "checks": [
+      {
+        "check": "Issue area classified correctly",
+        "result": "PASS",
+        "detail": "got 'consumer', expected 'consumer'"
+      },
+      {
+        "check": "Amount extracted correctly",
+        "result": "PASS",
+        "detail": "got 8000, expected 8000"
+      },
+      {
+        "check": "Key facts present in summary",
+        "result": "PASS",
+        "detail": "all present"
+      },
+      {
+        "check": "No invented people/names",
+        "result": "PASS",
+        "detail": "none found"
+      },
+      {
+        "check": "No section numbers / case-law citations",
+        "result": "PASS",
+        "detail": "none detected"
+      },
+      {
+        "check": "Only verified-list laws named",
+        "result": "PASS",
+        "detail": "none flagged"
+      },
+      {
+        "check": "Next steps cover expected actions",
+        "result": "PASS",
+        "detail": "all themes present"
+      },
+      {
+        "check": "Lawyer / legal aid recommendation present",
+        "result": "PASS",
+        "detail": "3 item(s)"
+      },
+      {
+        "check": "Facts vs assumptions separated",
+        "result": "PASS",
+        "detail": "4 facts, 1 assumptions"
+      },
+      {
+        "check": "Document contains correct key facts",
+        "result": "FAIL",
+        "detail": "missing: HK-558213"
+      },
+      {
+        "check": "Document has no amounts absent from input",
+        "result": "PASS",
+        "detail": "ok"
+      }
+    ],
+    "issues": []
+  },
+  {
+    "test_id": "tc04_security_deposit_hindi",
+    "mode": "demo (rule-based, NOT AI)",
+    "checks": [
+      {
+        "check": "Issue area classified correctly",
+        "result": "PASS",
+        "detail": "got 'tenancy', expected 'tenancy'"
+      },
+      {
+        "check": "Amount extracted correctly",
+        "result": "PASS",
+        "detail": "got 25000, expected 25000"
+      },
+      {
+        "check": "Key facts present in summary",
+        "result": "PASS",
+        "detail": "all present"
+      },
+      {
+        "check": "No invented people/names",
+        "result": "PASS",
+        "detail": "none found"
+      },
+      {
+        "check": "No section numbers / case-law citations",
+        "result": "PASS",
+        "detail": "none detected"
+      },
+      {
+        "check": "Only verified-list laws named",
+        "result": "PASS",
+        "detail": "none flagged"
+      },
+      {
+        "check": "Next steps cover expected actions",
+        "result": "PASS",
+        "detail": "all themes present"
+      },
+      {
+        "check": "Lawyer / legal aid recommendation present",
+        "result": "PASS",
+        "detail": "3 item(s)"
+      },
+      {
+        "check": "Facts vs assumptions separated",
+        "result": "PASS",
+        "detail": "2 facts, 1 assumptions"
+      },
+      {
+        "check": "Document contains correct key facts",
+        "result": "PASS",
+        "detail": "all present"
+      },
+      {
+        "check": "Document has no amounts absent from input",
+        "result": "PASS",
+        "detail": "ok"
+      },
+      {
+        "check": "Chat reply in user's language",
+        "result": "FAIL",
+        "detail": "detected 'English'"
+      }
+    ],
+    "issues": []
+  }
+]

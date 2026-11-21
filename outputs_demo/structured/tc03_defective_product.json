@@ -1,0 +1,292 @@
+{
+  "test_id": "tc03_defective_product",
+  "title": "Defective product bought online, no refund",
+  "user_input": "I ordered a mixer grinder from an online store called HomeKart on 2 October 2025 and paid ₹8,000 by UPI. It was delivered on 6 October. When I used it the first time, the motor started smoking and stopped working. I raised a return request on 7 October (ticket number HK-558213) and the courier picked it up on 10 October. The website showed 'refund initiated' on 12 October but I have not received any money until today, and customer care keeps giving the same answer. I live in Jaipur. I have the invoice, UPI payment screenshot, and a video of the smoke.",
+  "run_started": "2026-11-20T20:34:13",
+  "mode": "demo (rule-based, NOT AI)",
+  "steps": {
+    "chat_reply": {
+      "task": "chat",
+      "data": {
+        "reply": "[Demo mode – rule-based reply, not AI] Thank you – I have the key details. Open the Case Builder to generate your structured case summary.",
+        "language": "English",
+        "follow_up_questions": [],
+        "ready_for_case_summary": true
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "classify": {
+      "task": "classify",
+      "data": {
+        "issue_area": "consumer",
+        "issue_type": "Defective product – refund not given",
+        "language": "English",
+        "summary": "I ordered a mixer grinder from an online store called HomeKart on 2 October 2025 and paid ₹8,000 by UPI. It was delivered on 6 October. When I used it the first",
+        "urgency": "medium",
+        "confidence": "low",
+        "needs_lawyer_urgently": false
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "extract_facts": {
+      "task": "extract_facts",
+      "data": {
+        "case_title": "Defective product – refund not given (demo extraction)",
+        "issue_type": "Defective product – refund not given",
+        "location": "",
+        "people_involved": [
+          {
+            "name": "Not stated",
+            "role": "Customer (user)"
+          },
+          {
+            "name": "Not stated",
+            "role": "Seller / platform"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "Not stated",
+            "event": "I ordered a mixer grinder from an online store called HomeKart on 2 October 2025 and paid ₹8,000 by UPI."
+          },
+          {
+            "date": "Not stated",
+            "event": "It was delivered on 6 October."
+          },
+          {
+            "date": "Not stated",
+            "event": "When I used it the first time, the motor started smoking and stopped working."
+          },
+          {
+            "date": "Not stated",
+            "event": "I raised a return request on 7 October (ticket number HK-558213) and the courier picked it up on 10 October."
+          },
+          {
+            "date": "Not stated",
+            "event": "The website showed 'refund initiated' on 12 October but I have not received any money until today, and customer care keeps giving the same answer."
+          },
+          {
+            "date": "Not stated",
+            "event": "I live in Jaipur."
+          }
+        ],
+        "important_dates": [
+          {
+            "date": "2 October 2025",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "6 October.",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "7 October",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "10 October.",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "12 October",
+            "description": "Date mentioned by user"
+          }
+        ],
+        "amount_involved": {
+          "value": 8000,
+          "currency": "INR",
+          "description": "Amount mentioned by user"
+        },
+        "evidence_available": [
+          "Invoice",
+          "Order"
+        ],
+        "missing_information": [
+          "Names of the parties",
+          "Exact dates",
+          "City / state",
+          "Copies of written communication"
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "guidance": {
+      "task": "guidance",
+      "data": {
+        "issue_overview": "[Demo mode – template guidance, not AI] This appears to be a consumer complaint about a defective product bought online and a refund that has not been given.",
+        "confirmed_facts": [
+          "Issue type: Defective product – refund not given",
+          "Amount involved: ₹8,000",
+          "Evidence mentioned: Invoice",
+          "Evidence mentioned: Order"
+        ],
+        "assumptions": [
+          "The demo engine uses templates and cannot assess the specific facts."
+        ],
+        "legal_options": [
+          {
+            "option": "Complain to seller/platform",
+            "description": "Use the platform's grievance officer / customer support in writing.",
+            "considerations": "Fastest; keep ticket numbers."
+          },
+          {
+            "option": "National Consumer Helpline",
+            "description": "Register a grievance by calling 1915 or online at consumerhelpline.gov.in.",
+            "considerations": "Free; aims at pre-litigation resolution."
+          },
+          {
+            "option": "Consumer Commission via e-Daakhil",
+            "description": "File a complaint online with the District Consumer Commission.",
+            "considerations": "Formal process; may take months."
+          }
+        ],
+        "next_steps": [
+          {
+            "step": "Collect documents",
+            "details": "Gather all proofs listed in the Evidence Checklist."
+          },
+          {
+            "step": "Send a written request",
+            "details": "Use the Document Generator to prepare a draft and send it by email and/or registered post."
+          },
+          {
+            "step": "Use official channels",
+            "details": "India Code (official repository of central and state laws) – https://www.indiacode.nic.in; National Consumer Helpline – call 1915 or file online – https://consumerhelpline.gov.in; e-Daakhil – online filing of consumer complaints with Consumer Commissions – https://edaakhil.nic.in; NALSA – free legal aid; national legal aid helpline 15100 – https://nalsa.gov.in"
+          }
+        ],
+        "documents_to_collect": [
+          "Invoice",
+          "Order"
+        ],
+        "when_to_consult_lawyer": [
+          "If the other side sends a legal notice or threatens action",
+          "If the amount is large or deadlines are involved",
+          "Before filing any court case"
+        ],
+        "laws_referenced": [
+          {
+            "name": "Consumer Protection Act, 2019",
+            "relevance": "Central law on consumer rights, unfair trade practices, and consumer commissions at district, state and national level."
+          },
+          {
+            "name": "Consumer Protection (E-Commerce) Rules, 2020",
+            "relevance": "Rules made under the Consumer Protection Act, 2019 that apply to online sellers and marketplaces, including grievance redressal."
+          }
+        ],
+        "uncertainty_notes": [
+          "Demo mode does not analyse your facts. Use AI mode or consult a lawyer / free legal aid for case-specific information."
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "document": {
+      "task": "document:consumer_refund",
+      "data": {
+        "title": "Complaint and Request for Refund (demo template)",
+        "recipient_name": "[Seller / Grievance Officer]",
+        "recipient_address": "[Recipient address]",
+        "sender_name": "[Your name]",
+        "sender_address": "[Your address]",
+        "date": "[Date]",
+        "subject": "Complaint regarding defective product – Order [order number] – refund of ₹8,000",
+        "body": "Dear [Seller / Grievance Officer],\n\nOn [order date] I purchased [product name] for ₹8,000 (Order [number]). The product delivered on [delivery date] was defective: [describe defect]. I reported this on [date] but have not received a refund.\n\nI request a full refund of ₹8,000 within 15 days. If not resolved, I may approach the National Consumer Helpline or the Consumer Commission.\n\nI have attached copies of the supporting documents.\n\nYours sincerely,\n[Your name]\n[Phone] | [Email]",
+        "supporting_documents": [
+          "Order confirmation / invoice",
+          "Payment proof",
+          "Photos/video of defect",
+          "Complaint ticket numbers and emails"
+        ],
+        "placeholders_to_fill": [
+          "[Email]",
+          "[Phone]",
+          "[Seller / Grievance Officer]",
+          "[Your name]",
+          "[date]",
+          "[delivery date]",
+          "[describe defect]",
+          "[number]",
+          "[order date]",
+          "[product name]"
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "checklist": {
+      "task": "checklist",
+      "data": {
+        "items": [
+          {
+            "category": "Agreements",
+            "item": "Written agreement / contract / offer letter",
+            "why_needed": "Proves the terms",
+            "priority": "high"
+          },
+          {
+            "category": "Receipts",
+            "item": "Payment receipts or invoices",
+            "why_needed": "Proves the amount paid",
+            "priority": "high"
+          },
+          {
+            "category": "Bank statements",
+            "item": "Bank / UPI statements showing the transaction",
+            "why_needed": "Independent proof of payment",
+            "priority": "high"
+          },
+          {
+            "category": "Messages",
+            "item": "WhatsApp/SMS messages with the other party",
+            "why_needed": "Shows your requests and their replies",
+            "priority": "medium"
+          },
+          {
+            "category": "Emails",
+            "item": "Emails sent and received",
+            "why_needed": "Dated written record",
+            "priority": "medium"
+          },
+          {
+            "category": "Notices",
+            "item": "Any notice or letter sent or received",
+            "why_needed": "Shows formal demand",
+            "priority": "medium"
+          },
+          {
+            "category": "Identity/Address proof",
+            "item": "Your ID and address proof",
+            "why_needed": "Needed for complaints",
+            "priority": "low"
+          }
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    }
+  },
+  "errors": [],
+  "document_type": "consumer_refund",
+  "run_finished": "2026-11-20T20:34:13"
+}

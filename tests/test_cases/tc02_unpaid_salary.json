@@ -1,0 +1,14 @@
+{
+  "id": "tc02_unpaid_salary",
+  "title": "Two months of salary unpaid",
+  "user_input": "I work as a customer support executive at BrightPath Services Pvt Ltd in Noida. My monthly salary is ₹32,000 and it is credited to my bank account by the 7th of each month. I have not received my salary for August 2025 and September 2025, so ₹64,000 is pending. I emailed HR (Ms. Kavita Rao) on 10 September and again on 8 October 2025. HR replied once saying 'cash flow issues, will be cleared soon' but nothing has been paid. I am still working there. I have my offer letter, salary slips up to July, and bank statements.",
+  "language": "English",
+  "expected": {
+    "issue_area": "employment",
+    "amount": 64000,
+    "doc_type": "salary_request",
+    "facts_must_mention": ["BrightPath", "Noida", "August", "September"],
+    "document_must_contain": ["64,000|64000", "August", "September"],
+    "relevant_next_step_keywords": ["labour", "email|letter|written"]
+  }
+}

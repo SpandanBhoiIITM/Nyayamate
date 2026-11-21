@@ -1,0 +1,283 @@
+{
+  "test_id": "tc02_unpaid_salary",
+  "title": "Two months of salary unpaid",
+  "user_input": "I work as a customer support executive at BrightPath Services Pvt Ltd in Noida. My monthly salary is ₹32,000 and it is credited to my bank account by the 7th of each month. I have not received my salary for August 2025 and September 2025, so ₹64,000 is pending. I emailed HR (Ms. Kavita Rao) on 10 September and again on 8 October 2025. HR replied once saying 'cash flow issues, will be cleared soon' but nothing has been paid. I am still working there. I have my offer letter, salary slips up to July, and bank statements.",
+  "run_started": "2026-11-20T20:34:13",
+  "mode": "demo (rule-based, NOT AI)",
+  "steps": {
+    "chat_reply": {
+      "task": "chat",
+      "data": {
+        "reply": "[Demo mode – rule-based reply, not AI] Thank you – I have the key details. Open the Case Builder to generate your structured case summary.",
+        "language": "English",
+        "follow_up_questions": [],
+        "ready_for_case_summary": true
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "classify": {
+      "task": "classify",
+      "data": {
+        "issue_area": "employment",
+        "issue_type": "Unpaid salary",
+        "language": "English",
+        "summary": "I work as a customer support executive at BrightPath Services Pvt Ltd in Noida. My monthly salary is ₹32,000 and it is credited to my bank account by the 7th of",
+        "urgency": "medium",
+        "confidence": "low",
+        "needs_lawyer_urgently": false
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "extract_facts": {
+      "task": "extract_facts",
+      "data": {
+        "case_title": "Unpaid salary (demo extraction)",
+        "issue_type": "Unpaid salary",
+        "location": "",
+        "people_involved": [
+          {
+            "name": "Not stated",
+            "role": "Employee (user)"
+          },
+          {
+            "name": "Not stated",
+            "role": "Employer"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "Not stated",
+            "event": "I work as a customer support executive at BrightPath Services Pvt Ltd in Noida."
+          },
+          {
+            "date": "Not stated",
+            "event": "My monthly salary is ₹32,000 and it is credited to my bank account by the 7th of each month."
+          },
+          {
+            "date": "Not stated",
+            "event": "I have not received my salary for August 2025 and September 2025, so ₹64,000 is pending."
+          },
+          {
+            "date": "Not stated",
+            "event": "I emailed HR (Ms."
+          },
+          {
+            "date": "Not stated",
+            "event": "Kavita Rao) on 10 September and again on 8 October 2025."
+          },
+          {
+            "date": "Not stated",
+            "event": "HR replied once saying 'cash flow issues, will be cleared soon' but nothing has been paid."
+          }
+        ],
+        "important_dates": [
+          {
+            "date": "10 September",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "8 October 2025",
+            "description": "Date mentioned by user"
+          }
+        ],
+        "amount_involved": {
+          "value": 32000,
+          "currency": "INR",
+          "description": "Amount mentioned by user"
+        },
+        "evidence_available": [
+          "Email",
+          "Bank Statement",
+          "Salary Slip"
+        ],
+        "missing_information": [
+          "Names of the parties",
+          "Exact dates",
+          "City / state",
+          "Copies of written communication"
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "guidance": {
+      "task": "guidance",
+      "data": {
+        "issue_overview": "[Demo mode – template guidance, not AI] This appears to be a claim for unpaid salary. Employers generally must pay earned wages on time; the exact process depends on your employment terms and your state's labour authorities.",
+        "confirmed_facts": [
+          "Issue type: Unpaid salary",
+          "Amount involved: ₹32,000",
+          "Evidence mentioned: Email",
+          "Evidence mentioned: Bank Statement",
+          "Evidence mentioned: Salary Slip"
+        ],
+        "assumptions": [
+          "The demo engine uses templates and cannot assess the specific facts."
+        ],
+        "legal_options": [
+          {
+            "option": "Written salary request",
+            "description": "Email HR/management with the months and amount due and request payment by a date.",
+            "considerations": "Creates a record; low cost."
+          },
+          {
+            "option": "Complaint to the Labour Department",
+            "description": "Approach your state Labour Department / Labour Commissioner office.",
+            "considerations": "Process and timelines vary by state."
+          },
+          {
+            "option": "Legal notice through a lawyer",
+            "description": "A lawyer can send a formal notice and advise on further remedies.",
+            "considerations": "Advisable if the amount is large or you were terminated."
+          }
+        ],
+        "next_steps": [
+          {
+            "step": "Collect documents",
+            "details": "Gather all proofs listed in the Evidence Checklist."
+          },
+          {
+            "step": "Send a written request",
+            "details": "Use the Document Generator to prepare a draft and send it by email and/or registered post."
+          },
+          {
+            "step": "Use official channels",
+            "details": "India Code (official repository of central and state laws) – https://www.indiacode.nic.in; Ministry of Labour & Employment (find your state Labour Department) – https://labour.gov.in; NALSA – free legal aid; national legal aid helpline 15100 – https://nalsa.gov.in"
+          }
+        ],
+        "documents_to_collect": [
+          "Email",
+          "Bank Statement",
+          "Salary Slip"
+        ],
+        "when_to_consult_lawyer": [
+          "If the other side sends a legal notice or threatens action",
+          "If the amount is large or deadlines are involved",
+          "Before filing any court case"
+        ],
+        "laws_referenced": [
+          {
+            "name": "Code on Wages, 2019",
+            "relevance": "Brought into force from 21 November 2025 with the other three labour codes. It replaced the Payment of Wages Act, 1936, the Minimum Wages Act, 1948, the Payment of Bonus Act, 1965 and the Equal Remuneration Act, 1976. Some rules (central and state) may still be pending – verify current status."
+          },
+          {
+            "name": "Indian Contract Act, 1872",
+            "relevance": "General law on agreements, including obligations under rental and employment agreements."
+          }
+        ],
+        "uncertainty_notes": [
+          "Demo mode does not analyse your facts. Use AI mode or consult a lawyer / free legal aid for case-specific information."
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "document": {
+      "task": "document:salary_request",
+      "data": {
+        "title": "Request for Payment of Pending Salary (demo template)",
+        "recipient_name": "[HR Manager / Employer name]",
+        "recipient_address": "[Recipient address]",
+        "sender_name": "[Your name]",
+        "sender_address": "[Your address]",
+        "date": "[Date]",
+        "subject": "Request for payment of pending salary – ₹32,000",
+        "body": "Dear [HR Manager / Employer name],\n\nI have been working as [designation] since [joining date]. My salary for [month 1] and [month 2] has not been paid, amounting to ₹32,000. I have raised this on [dates] but have not received payment.\n\nI request you to pay the pending amount within 15 days of this letter and to confirm the payment date in writing.\n\nI have attached copies of the supporting documents.\n\nYours sincerely,\n[Your name]\n[Phone] | [Email]",
+        "supporting_documents": [
+          "Appointment / offer letter",
+          "Salary slips",
+          "Bank statements showing non-payment",
+          "Attendance records",
+          "Emails to HR"
+        ],
+        "placeholders_to_fill": [
+          "[Email]",
+          "[HR Manager / Employer name]",
+          "[Phone]",
+          "[Your name]",
+          "[dates]",
+          "[designation]",
+          "[joining date]",
+          "[month 1]",
+          "[month 2]"
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "checklist": {
+      "task": "checklist",
+      "data": {
+        "items": [
+          {
+            "category": "Agreements",
+            "item": "Written agreement / contract / offer letter",
+            "why_needed": "Proves the terms",
+            "priority": "high"
+          },
+          {
+            "category": "Receipts",
+            "item": "Payment receipts or invoices",
+            "why_needed": "Proves the amount paid",
+            "priority": "high"
+          },
+          {
+            "category": "Bank statements",
+            "item": "Bank / UPI statements showing the transaction",
+            "why_needed": "Independent proof of payment",
+            "priority": "high"
+          },
+          {
+            "category": "Messages",
+            "item": "WhatsApp/SMS messages with the other party",
+            "why_needed": "Shows your requests and their replies",
+            "priority": "medium"
+          },
+          {
+            "category": "Emails",
+            "item": "Emails sent and received",
+            "why_needed": "Dated written record",
+            "priority": "medium"
+          },
+          {
+            "category": "Notices",
+            "item": "Any notice or letter sent or received",
+            "why_needed": "Shows formal demand",
+            "priority": "medium"
+          },
+          {
+            "category": "Identity/Address proof",
+            "item": "Your ID and address proof",
+            "why_needed": "Needed for complaints",
+            "priority": "low"
+          }
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    }
+  },
+  "errors": [],
+  "document_type": "salary_request",
+  "run_finished": "2026-11-20T20:34:13"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tc01_security_deposit",
+  "title": "Security deposit not refunded by landlord",
+  "user_input": "I rented a 1BHK flat in Pune from Mr. Suresh Patil from 1 June 2023. I paid a security deposit of ₹25,000 by bank transfer on 28 May 2023 and we signed an 11-month rental agreement that was later renewed. I vacated the flat on 31 July 2025 after giving one month's notice on WhatsApp, and handed over the keys the same day. The flat was in good condition and I have photos. Since then the landlord keeps saying he will pay 'next week' but has not returned any of the deposit. My last message to him was on 20 September 2025 and he has stopped replying. What can I do?",
+  "language": "English",
+  "expected": {
+    "issue_area": "tenancy",
+    "amount": 25000,
+    "doc_type": "deposit_refund",
+    "facts_must_mention": ["Suresh Patil", "Pune", "31 July 2025"],
+    "document_must_contain": ["25,000|25000"],
+    "relevant_next_step_keywords": ["letter|notice|written|demand", "legal aid|lawyer|mediation|lok adalat|court"]
+  }
+}

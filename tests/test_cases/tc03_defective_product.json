@@ -1,0 +1,14 @@
+{
+  "id": "tc03_defective_product",
+  "title": "Defective product bought online, no refund",
+  "user_input": "I ordered a mixer grinder from an online store called HomeKart on 2 October 2025 and paid ₹8,000 by UPI. It was delivered on 6 October. When I used it the first time, the motor started smoking and stopped working. I raised a return request on 7 October (ticket number HK-558213) and the courier picked it up on 10 October. The website showed 'refund initiated' on 12 October but I have not received any money until today, and customer care keeps giving the same answer. I live in Jaipur. I have the invoice, UPI payment screenshot, and a video of the smoke.",
+  "language": "English",
+  "expected": {
+    "issue_area": "consumer",
+    "amount": 8000,
+    "doc_type": "consumer_refund",
+    "facts_must_mention": ["HomeKart", "HK-558213", "Jaipur"],
+    "document_must_contain": ["8,000|8000", "HK-558213"],
+    "relevant_next_step_keywords": ["1915|consumer helpline|consumerhelpline", "e-daakhil|edaakhil|consumer commission"]
+  }
+}

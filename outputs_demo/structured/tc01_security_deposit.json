@@ -1,0 +1,290 @@
+{
+  "test_id": "tc01_security_deposit",
+  "title": "Security deposit not refunded by landlord",
+  "user_input": "I rented a 1BHK flat in Pune from Mr. Suresh Patil from 1 June 2023. I paid a security deposit of ₹25,000 by bank transfer on 28 May 2023 and we signed an 11-month rental agreement that was later renewed. I vacated the flat on 31 July 2025 after giving one month's notice on WhatsApp, and handed over the keys the same day. The flat was in good condition and I have photos. Since then the landlord keeps saying he will pay 'next week' but has not returned any of the deposit. My last message to him was on 20 September 2025 and he has stopped replying. What can I do?",
+  "run_started": "2026-11-20T20:34:13",
+  "mode": "demo (rule-based, NOT AI)",
+  "steps": {
+    "chat_reply": {
+      "task": "chat",
+      "data": {
+        "reply": "[Demo mode – rule-based reply, not AI] Thank you – I have the key details. Open the Case Builder to generate your structured case summary.",
+        "language": "English",
+        "follow_up_questions": [],
+        "ready_for_case_summary": true
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "classify": {
+      "task": "classify",
+      "data": {
+        "issue_area": "tenancy",
+        "issue_type": "Security deposit not refunded",
+        "language": "English",
+        "summary": "I rented a 1BHK flat in Pune from Mr. Suresh Patil from 1 June 2023. I paid a security deposit of ₹25,000 by bank transfer on 28 May 2023 and we signed an 11-mo",
+        "urgency": "medium",
+        "confidence": "low",
+        "needs_lawyer_urgently": false
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "extract_facts": {
+      "task": "extract_facts",
+      "data": {
+        "case_title": "Security deposit not refunded (demo extraction)",
+        "issue_type": "Security deposit not refunded",
+        "location": "",
+        "people_involved": [
+          {
+            "name": "Not stated",
+            "role": "Tenant (user)"
+          },
+          {
+            "name": "Not stated",
+            "role": "Landlord"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "Not stated",
+            "event": "I rented a 1BHK flat in Pune from Mr."
+          },
+          {
+            "date": "Not stated",
+            "event": "Suresh Patil from 1 June 2023."
+          },
+          {
+            "date": "Not stated",
+            "event": "I paid a security deposit of ₹25,000 by bank transfer on 28 May 2023 and we signed an 11-month rental agreement that was later renewed."
+          },
+          {
+            "date": "Not stated",
+            "event": "I vacated the flat on 31 July 2025 after giving one month's notice on WhatsApp, and handed over the keys the same day."
+          },
+          {
+            "date": "Not stated",
+            "event": "The flat was in good condition and I have photos."
+          },
+          {
+            "date": "Not stated",
+            "event": "Since then the landlord keeps saying he will pay 'next week' but has not returned any of the deposit."
+          }
+        ],
+        "important_dates": [
+          {
+            "date": "1 June 2023",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "28 May 2023",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "31 July 2025",
+            "description": "Date mentioned by user"
+          },
+          {
+            "date": "20 September 2025",
+            "description": "Date mentioned by user"
+          }
+        ],
+        "amount_involved": {
+          "value": 25000,
+          "currency": "INR",
+          "description": "Amount mentioned by user"
+        },
+        "evidence_available": [
+          "Agreement",
+          "Whatsapp",
+          "Photos"
+        ],
+        "missing_information": [
+          "Names of the parties",
+          "Exact dates",
+          "City / state",
+          "Copies of written communication"
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "guidance": {
+      "task": "guidance",
+      "data": {
+        "issue_overview": "[Demo mode – template guidance, not AI] This appears to be a dispute over the refund of a rental security deposit after vacating. Whether deductions are allowed usually depends on the rental agreement and the condition of the property.",
+        "confirmed_facts": [
+          "Issue type: Security deposit not refunded",
+          "Amount involved: ₹25,000",
+          "Evidence mentioned: Agreement",
+          "Evidence mentioned: Whatsapp",
+          "Evidence mentioned: Photos"
+        ],
+        "assumptions": [
+          "The demo engine uses templates and cannot assess the specific facts."
+        ],
+        "legal_options": [
+          {
+            "option": "Written demand letter",
+            "description": "Send a dated letter/email asking for the refund within a fixed time.",
+            "considerations": "Low cost; creates a written record."
+          },
+          {
+            "option": "Mediation / Lok Adalat",
+            "description": "Seek a settlement through mediation or a Lok Adalat via the District Legal Services Authority.",
+            "considerations": "Free or low cost; needs both sides to cooperate."
+          },
+          {
+            "option": "Civil remedy through a lawyer",
+            "description": "A lawyer can advise on a legal notice or civil claim under the law applicable in your state.",
+            "considerations": "Costs time and money; consider for larger amounts."
+          }
+        ],
+        "next_steps": [
+          {
+            "step": "Collect documents",
+            "details": "Gather all proofs listed in the Evidence Checklist."
+          },
+          {
+            "step": "Send a written request",
+            "details": "Use the Document Generator to prepare a draft and send it by email and/or registered post."
+          },
+          {
+            "step": "Use official channels",
+            "details": "India Code (official repository of central and state laws) – https://www.indiacode.nic.in; NALSA – free legal aid; national legal aid helpline 15100 – https://nalsa.gov.in"
+          }
+        ],
+        "documents_to_collect": [
+          "Agreement",
+          "Whatsapp",
+          "Photos"
+        ],
+        "when_to_consult_lawyer": [
+          "If the other side sends a legal notice or threatens action",
+          "If the amount is large or deadlines are involved",
+          "Before filing any court case"
+        ],
+        "laws_referenced": [
+          {
+            "name": "Indian Contract Act, 1872",
+            "relevance": "General law on agreements, including obligations under rental and employment agreements."
+          },
+          {
+            "name": "Model Tenancy Act, 2021",
+            "relevance": "A MODEL law circulated by the Central Government. It applies only in states that have adopted it; otherwise the state's own rent control law applies. Always check which law applies in your state."
+          }
+        ],
+        "uncertainty_notes": [
+          "Demo mode does not analyse your facts. Use AI mode or consult a lawyer / free legal aid for case-specific information."
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "document": {
+      "task": "document:deposit_refund",
+      "data": {
+        "title": "Request for Refund of Security Deposit (demo template)",
+        "recipient_name": "[Landlord's name]",
+        "recipient_address": "[Recipient address]",
+        "sender_name": "[Your name]",
+        "sender_address": "[Your address]",
+        "date": "[Date]",
+        "subject": "Request for refund of security deposit of ₹25,000",
+        "body": "Dear [Landlord's name],\n\nI was a tenant at [property address] from [start date] to [date of vacating]. At the start of the tenancy I paid a security deposit of ₹25,000. I vacated the property on [date] and handed over the keys. Despite my requests, the deposit has not been refunded.\n\nI request you to refund ₹25,000 (less any deduction you can justify in writing with supporting bills) within 15 days of this letter, to [bank details / UPI ID].\n\nI have attached copies of the supporting documents.\n\nYours sincerely,\n[Your name]\n[Phone] | [Email]",
+        "supporting_documents": [
+          "Rental agreement",
+          "Deposit payment receipt / bank statement",
+          "Proof of vacating (handover message, photos)",
+          "Earlier messages"
+        ],
+        "placeholders_to_fill": [
+          "[Email]",
+          "[Landlord's name]",
+          "[Phone]",
+          "[Your name]",
+          "[bank details / UPI ID]",
+          "[date of vacating]",
+          "[date]",
+          "[property address]",
+          "[start date]"
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    },
+    "checklist": {
+      "task": "checklist",
+      "data": {
+        "items": [
+          {
+            "category": "Agreements",
+            "item": "Written agreement / contract / offer letter",
+            "why_needed": "Proves the terms",
+            "priority": "high"
+          },
+          {
+            "category": "Receipts",
+            "item": "Payment receipts or invoices",
+            "why_needed": "Proves the amount paid",
+            "priority": "high"
+          },
+          {
+            "category": "Bank statements",
+            "item": "Bank / UPI statements showing the transaction",
+            "why_needed": "Independent proof of payment",
+            "priority": "high"
+          },
+          {
+            "category": "Messages",
+            "item": "WhatsApp/SMS messages with the other party",
+            "why_needed": "Shows your requests and their replies",
+            "priority": "medium"
+          },
+          {
+            "category": "Emails",
+            "item": "Emails sent and received",
+            "why_needed": "Dated written record",
+            "priority": "medium"
+          },
+          {
+            "category": "Notices",
+            "item": "Any notice or letter sent or received",
+            "why_needed": "Shows formal demand",
+            "priority": "medium"
+          },
+          {
+            "category": "Identity/Address proof",
+            "item": "Your ID and address proof",
+            "why_needed": "Needed for complaints",
+            "priority": "low"
+          }
+        ]
+      },
+      "source": "demo",
+      "model": "offline-demo-engine (rule-based, not AI)",
+      "raw_outputs": [],
+      "citation_warnings": [],
+      "created_at": "2026-11-20T20:34:13"
+    }
+  },
+  "errors": [],
+  "document_type": "deposit_refund",
+  "run_finished": "2026-11-20T20:34:13"
+}
